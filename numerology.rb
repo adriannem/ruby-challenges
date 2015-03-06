@@ -1,0 +1,34 @@
+puts "Please provide your date of birth in the format MMDDYYYY for a total of 8 digits."
+birthdate = gets
+number = birthdate[0].to_i+birthdate[1].to_i+birthdate[2].to_i+birthdate[3].to_i+birthdate[4].to_i+birthdate[5].to_i+birthdate[6].to_i+birthdate[7].to_i
+puts number
+number = number.to_s
+number = number[0].to_i + number[1].to_i
+puts number
+if number > 9
+number = number.to_s
+number = number[0].to_i + number[1].to_i
+puts number
+else
+end
+
+case number
+when number = 1
+    puts "Your numerology number is 1.\nOne is the leader. The number one indicates the ability to stand alone, and is a strong vibration. Ruled by the Sun."
+when number = 2
+    puts "Your numerology number is 2.\nThis is the mediator and peace-lover. The number two indicates the desire for harmony. It is a gentle, considerate, and sensitive vibration. Ruled by the Moon."
+when number = 3
+    puts "Your numerology number is 3.\nNumber Three is a sociable, friendly, and outgoing vibration. Kind, positive, and optimistic, Three’s enjoy life and have a good sense of humor. Ruled by Jupiter."
+when number = 4
+    puts "Your numerology number is 4.\nThis is the worker. Practical, with a love of detail, Fours are trustworthy, hard-working, and helpful. Ruled by Uranus."
+when number = 5
+    puts "Your numerology number is 5.\nThis is the freedom lover. The number five is an intellectual vibration. These are ‘idea’ people with a love of variety and the ability to adapt to most situations. Ruled by Mercury."
+when number = 6
+    puts "Your numerology number is 6.\nThis is the peace lover. The number six is a loving, stable, and harmonious vibration. Ruled by Venus."
+when number = 7
+    puts "Your numerology number is 7.\n This is the deep thinker. The number seven is a spiritual vibration. These people are not very attached to material things, are introspective, and generally quiet. Ruled by Neptune."
+when number = 8
+    puts "Your numerology number is 8.\nThis is the manager. Number Eight is a strong, successful, and material vibration. Ruled by Saturn."
+when number = 9
+    puts "Your numerology number is 9.\n This is the teacher. Number Nine is a tolerant, somewhat impractical, and sympathetic vibration. Ruled by Mars."
+end
