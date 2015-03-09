@@ -1,8 +1,8 @@
 require 'rubygems'
 require 'twilio-ruby'
 
-account_sid = "AC212d32a4dd66e2c9a2e6c3fb63e44934"
-auth_token = "82bbf988533b038ab3394350f8bce91c"
+account_sid = "xxxxxxxx"
+auth_token = "xxxxxxxxx"
 
 @client = Twilio::REST::Client.new(account_sid, auth_token)
 
