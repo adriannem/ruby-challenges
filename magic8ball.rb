@@ -1,8 +1,8 @@
 require 'rubygems'
 require 'twilio-ruby'
 
-account_sid = "AC212d32a4dd66e2c9a2e6c3fb63e44934"
-auth_token = "82bbf988533b038ab3394350f8bce91c"
+account_sid = "xxxxxxxxxx"
+auth_token = "xxxxxxxxxxxxxx"
 
 @client = Twilio::REST::Client.new(account_sid, auth_token)
 
@@ -15,8 +15,8 @@ answer = ["It is certain", "It is decidedly so", "Without a doubt", "Yes definit
 answer.each do |message|
 
 message = @client.account.messages.create(
-  :from => "18326483732", 
-  :to =>"12818465842", 
+  :from => "xxxxxxxxxxxx", 
+  :to =>"xxxxxxxxxxxx", 
     :body => message
 )
  
